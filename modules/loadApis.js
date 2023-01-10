@@ -24,6 +24,9 @@ const loadApis = (initialPath = `${app_path}/api`) => {
                                 }
                             }
                         )
+                        .catch(
+                            (error) => console.error(`error while getting info about file ${fileName}, details: ${error}`)
+                        )
 
                 }); 
             }
